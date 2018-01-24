@@ -1,4 +1,5 @@
-process.stdin.setEncoding('uft-8');
+process.stdin.setEncoding('utf-8');
+
 
 process.stdin.on('readable', function() {
 	// tutaj treść tego co ma się wykonac w moemncie odczytania wejscia.
@@ -15,6 +16,7 @@ process.stdin.on('readable', function() {
 		}
 	}
 	console.log (process.versions);
+	console.log (process.env)
 });
 
 
